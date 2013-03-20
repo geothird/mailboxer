@@ -1,3 +1,3 @@
 class AttachmentUploader < CarrierWave::Uploader::Base
-  storage :file
+  storage Mailboxer.attachment_storage
 end
